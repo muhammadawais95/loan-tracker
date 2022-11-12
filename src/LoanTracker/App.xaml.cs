@@ -1,12 +1,13 @@
-﻿namespace LoanTracker
-{
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
+﻿using LoanTracker.Views;
 
-            MainPage = new AppShell();
-        }
+namespace LoanTracker;
+
+public partial class App : Application
+{
+    public App()
+    {
+        InitializeComponent();
+
+        MainPage = new MainPage();
     }
 }
