@@ -1,1 +1,1 @@
-A .NET MAUI based app that keep track of loans using LiteDb
+A simple cross platform app that keeps track of loans built using Avalonia framework and uses LiteDb for storage
