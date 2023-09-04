@@ -36,8 +36,8 @@
                               RowDefinitions="20,*" ColumnDefinitions="Auto,*,Auto,*,Auto"
                               RowSpacing="10"
                               Padding="50,45,50,0">
-                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Income, StringFormat='${0}'}" FontAttributes="Bold" TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" />
-                            <Label Grid.Row="1" Grid.Column="0" Text="Income" FontSize="13" HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Income, StringFormat='Rs. {0}'}" FontAttributes="Bold" TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="1" Grid.Column="0" Text="Receivable" FontSize="13" HorizontalTextAlignment="Center" />
 
                             <Rectangle Grid.RowSpan="2" Grid.Column="1"
                                 VerticalOptions="Fill"
@@ -45,8 +45,8 @@
                                 StrokeThickness="0"
                                 Fill="Gray" />
 
-                            <Label Grid.Row="0" Grid.Column="2" Text="{Binding Expenses, StringFormat='${0}'}" FontAttributes="Bold" TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" />
-                            <Label Grid.Row="1" Grid.Column="2" Text="Expenses" FontSize="13" HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="0" Grid.Column="2" Text="{Binding Expenses, StringFormat='Rs. {0}'}" FontAttributes="Bold" TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="1" Grid.Column="2" Text="Payable" FontSize="13" HorizontalTextAlignment="Center" />
 
                             <Rectangle Grid.RowSpan="2" Grid.Column="3"
                                        VerticalOptions="Fill"
@@ -54,24 +54,24 @@
                                        StrokeThickness="0"
                                        Fill="Gray" />
 
-                            <Label Grid.Row="0" Grid.Column="4" Text="{Binding Loan, StringFormat='${0}'}" FontAttributes="Bold" TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="0" Grid.Column="4" Text="{Binding Loan, StringFormat='Rs. {0}'}" FontAttributes="Bold" TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" />
                             <Label Grid.Row="1" Grid.Column="4" Text="Loan" FontSize="13" HorizontalTextAlignment="Center" />
                         </Grid>
                     </Grid>
                 </Border>
 
-                <!-- Overview text, notifications bell, and date. -->
+                <!-- Recent Transactions -->
                 <Grid Grid.Row="1"
                       RowDefinitions="*" ColumnDefinitions="Auto,*,*">
-                    <Label Grid.Column="0" Text="Overview" FontAttributes="Bold" FontSize="22" TextColor="{StaticResource Primary}" VerticalOptions="Center" />
+                    <Label Grid.Column="0" Text="Recent Transactions" FontAttributes="Bold" FontSize="22" TextColor="{StaticResource Primary}" VerticalOptions="Center" />
 
-                    <Image Grid.Column="1" Source="notifications" HeightRequest="24" HorizontalOptions="Start" />
+                    <!--<Image Grid.Column="1" Source="notifications" HeightRequest="24" HorizontalOptions="Start" />-->
 
                     <!-- Binding DateTime.Now to label to show current date. -->
-                    <Label Grid.Column="2" Text="{Binding Source={x:Static system:DateTime.Now}, StringFormat='{0:d MMM, yyyy}'}" FontSize="14" FontAttributes="Bold" TextColor="{StaticResource Primary}" VerticalOptions="Center" HorizontalOptions="End" />
+                    <!--<Label Grid.Column="2" Text="{Binding Source={x:Static system:DateTime.Now}, StringFormat='{0:d MMM, yyyy}'}" FontSize="14" FontAttributes="Bold" TextColor="{StaticResource Primary}" VerticalOptions="Center" HorizontalOptions="End" />-->
                 </Grid>
 
-                <!-- Overview items. -->
+                <!-- Recent Transaction Items -->
                 <VerticalStackLayout Grid.Row="2"
                                      BindableLayout.ItemsSource="{Binding OverviewItems}"
                                      Spacing="18">
@@ -90,10 +90,10 @@
                                     </Border>
                                     <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
                                         <Label Text="{Binding Title}" FontSize="16" FontAttributes="Bold" />
-                                        <Label Text="{Binding Details}" FontSize="12" />
+                                        <Label Text="{Binding Description}" FontSize="12" />
                                     </VerticalStackLayout>
 
-                                    <Label Grid.Column="3" Text="{Binding Amount, StringFormat='${0}'}" FontAttributes="Bold" VerticalOptions="Center" />
+                                    <Label Grid.Column="3" Text="{Binding Amount, StringFormat='Rs. {0}'}" FontAttributes="Bold" VerticalOptions="Center" />
                                 </Grid>
                             </Border>
                         </DataTemplate>

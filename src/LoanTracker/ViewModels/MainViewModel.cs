@@ -1,9 +1,17 @@
 ﻿using LoanTracker.Models;
+using LoanTracker.Services;
 
 namespace LoanTracker.ViewModels;
 
 public class MainViewModel
 {
+    private IDataService _dataService;
+
+    public MainViewModel()
+    {
+        
+    }
+
     public string ProfilePhotoSource { get; set; } = "cemahseri";
     public string ProfileName { get; set; } = "cemahseri";
     public string ProfileDetails { get; set; } = "Back-End Developer";
@@ -12,50 +20,50 @@ public class MainViewModel
     public int Expenses { get; set; } = 5500;
     public int Loan { get; set; } = 890;
 
-    public List<OverviewItem> OverviewItems { get; set; } = new List<OverviewItem>
+    public List<TransactionItem> OverviewItems { get; set; } = new List<TransactionItem>
     {
-        new OverviewItem
+        new TransactionItem
         {
             IconSource = "arrow_upward",
 
             Title = "Sent",
-            Details = "Sent payment to client.",
+            Description = "Sent payment to client.",
 
             Amount = 150
         },
-        new OverviewItem
+        new TransactionItem
         {
             IconSource = "arrow_downward",
 
             Title = "Receive",
-            Details = "Received payment from company.",
+            Description = "Received payment from company.",
 
             Amount = 200
         },
-        new OverviewItem
+        new TransactionItem
         {
             IconSource = "payments",
 
             Title = "Loan",
-            Details = "Loan for the car.",
+            Description = "Loan for the car.",
 
             Amount = 100
         },
-        new OverviewItem
+        new TransactionItem
         {
             IconSource = "arrow_upward",
 
             Title = "Sent",
-            Details = "Sent payment to client.",
+            Description = "Sent payment to client.",
 
             Amount = 150
         },
-        new OverviewItem
+        new TransactionItem
         {
             IconSource = "arrow_downward",
 
             Title = "Receive",
-            Details = "Received payment from company.",
+            Description = "Received payment from company.",
 
             Amount = 306
         }

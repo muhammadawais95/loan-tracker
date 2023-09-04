@@ -3,7 +3,9 @@ using Android.Views;
 using Microsoft.Maui.LifecycleEvents;
 #endif
 
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using LoanTracker.Services;
 
 namespace LoanTracker;
 
@@ -20,6 +22,9 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
+
+        builder.Services.AddSingleton<IDataService, DataService>();
+
 #if ANDROID
         builder = builder.ConfigureLifecycleEvents(lifecycleBuilder =>
         {
