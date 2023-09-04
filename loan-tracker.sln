@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31611.283
+VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanTracker", "src\LoanTracker\LoanTracker.csproj", "{533B1DBC-0D3E-463A-982A-7FE8E22A8641}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanTracker", "LoanTracker\LoanTracker.csproj", "{4262231D-225F-4554-B275-56E3C3557BD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanTracker.Android", "LoanTracker.Android\LoanTracker.Android.csproj", "{2A36C8AE-4D93-46E2-96B4-65ABB039BCFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanTracker.Desktop", "LoanTracker.Desktop\LoanTracker.Desktop.csproj", "{EDE55A74-D7C6-484B-B47B-B8AADF6A7763}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoanTracker.Browser", "LoanTracker.Browser\LoanTracker.Browser.csproj", "{F704FFBD-7DF3-4B8F-A205-94ABF11D971F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +17,29 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{533B1DBC-0D3E-463A-982A-7FE8E22A8641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{533B1DBC-0D3E-463A-982A-7FE8E22A8641}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{533B1DBC-0D3E-463A-982A-7FE8E22A8641}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{533B1DBC-0D3E-463A-982A-7FE8E22A8641}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{533B1DBC-0D3E-463A-982A-7FE8E22A8641}.Release|Any CPU.Build.0 = Release|Any CPU
-		{533B1DBC-0D3E-463A-982A-7FE8E22A8641}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4262231D-225F-4554-B275-56E3C3557BD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4262231D-225F-4554-B275-56E3C3557BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4262231D-225F-4554-B275-56E3C3557BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4262231D-225F-4554-B275-56E3C3557BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A36C8AE-4D93-46E2-96B4-65ABB039BCFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A36C8AE-4D93-46E2-96B4-65ABB039BCFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A36C8AE-4D93-46E2-96B4-65ABB039BCFF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2A36C8AE-4D93-46E2-96B4-65ABB039BCFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A36C8AE-4D93-46E2-96B4-65ABB039BCFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A36C8AE-4D93-46E2-96B4-65ABB039BCFF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EDE55A74-D7C6-484B-B47B-B8AADF6A7763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE55A74-D7C6-484B-B47B-B8AADF6A7763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE55A74-D7C6-484B-B47B-B8AADF6A7763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE55A74-D7C6-484B-B47B-B8AADF6A7763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F704FFBD-7DF3-4B8F-A205-94ABF11D971F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F704FFBD-7DF3-4B8F-A205-94ABF11D971F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F704FFBD-7DF3-4B8F-A205-94ABF11D971F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F704FFBD-7DF3-4B8F-A205-94ABF11D971F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+		SolutionGuid = {73D1E6D1-9405-4E5A-8087-F59585FA57A2}
 	EndGlobalSection
 EndGlobal
